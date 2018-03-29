@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+input[type=text], select {
+	width: 30%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	alignment-baseline: top;
+	border-radius: 4px;
+	resize: vertical;
+}
+textarea {
+	
+	margin-top: 0px;
+	border-radius: 4px;
+	alignment-baseline:middle;
+	 box-sizing: border-box;
+}
+
+star{
+	color: red;
+}
+.main {
+	float: left;
+	width: 60%;
+	padding: 0 20px;
+	overflow: hidden;
+}
+.Banner {
+	width: 100%;
+	border-style: none;
+}
+
+@media only screen and (max-width:800px) {
+/* For tablets: */
+.main {
+	width: 80%;
+	padding: 0;
+}
+}
+
+@media only screen and (max-width:500px) {
+/* For mobile phones: */
+.menu, .main {
+	width: 100%;
+}
+}
