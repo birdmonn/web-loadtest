@@ -6,36 +6,52 @@
 <title>Form</title>
 <script src="./jquery-3.3.1.js"></script>
 <link rel="stylesheet" type="text/css" href="./Form-css.css">
-<link rel="stylesheet" type="text/css" href="./vertical-menu-css.css">
+<link rel="stylesheet" type="text/css" href="./menu-bar-css.css">
 </head>
 <body style="font-family:Verdana;">
+<!--  Banner -->
 <div class="Banner" style="background-color:#f1f1f1;padding:15px;">
   <h1>Banner web</h1>
 </div>
-<div style="overflow:auto">
-  <div class="vertical-menu"> 
-	 
-	<ul>
+<!--  menu -->
+<ul>
   <li><a class="active" href="./form.html">Form</a></li>
   <li><a href="./all-case.html">All Case</a></li>
   <li><a href="#">Report</a></li>
 </ul>
-	</div>
-	
-  <div class="main">
-    <h2>Project Detail</h2>
-    <form>
-      <div>
-        <label name="projectIdLabel">Project ID :</label>
-        <input type="text" name="projectId">
-        <br>
-        <label name="projectNameLabel">Project Name
+<!--  container -->
+<div class="container" >
+  <h3>แบบฟอร์มการอใช้บริการ</h3>
+  <h5>Project Detail</h5>
+  <form action="/#">
+    <div class="row">
+      <div class="col-10"></div>
+      <div class="col-15">
+        <label for="pId">Project ID</label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="pId" name="projectId">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10"></div>
+      <div class="col-15">
+        <label for="pName">Project Name
           <star>*</star>
-          :</label>
-        <input type="text" name="projectName">
-        <br>
-        <label>Significant Level :</label>
-        <select>
+        </label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="pName" name="projectName">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10"></div>
+      <div class="col-15">
+        <label for="country">Significant Level</label>
+      </div>
+      <div class="col-65">
+        <select id="significantLevel" name="significantLevel">
+          <option value="PS">PS</option>
           <option value="P1">P1</option>
           <option value="P2">P2</option>
           <option value="P3">P3</option>
@@ -43,30 +59,58 @@
           <option value="U2">U2</option>
           <option value="U3">U3</option>
         </select>
-        <br>
-        <label>Requset Type :</label>
-        <select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10"></div>
+      <div class="col-15">
+        <label for="country">Requset Type</label>
+      </div>
+      <div class="col-65">
+        <select id="requsetType" name="requsetType">
           <option value="New">New</option>
-          <option value="Modify">Modify</option>
+          <option value="modify">Modify</option>
           <option value="Enhance">Enhance</option>
         </select>
-        <br>
-        <label>Contact
-          <star>*</star>
-          :</label>
-        <input type="text" name="contact">
-        <br>
-        <label>Phone
-          <star>*</star>
-          :</label>
-        <input type="text" name="phone">
-        <br>
-        <label>Objective :</label>
-		  <textarea type="text" name="objective"></textarea>
       </div>
-    </form>
-  </div>
+    </div>
+    <div class="row">
+      <div class="col-10"></div>
+      <div class="col-15">
+        <label for="contact">Contact
+          <star>*</star>
+        </label>
+      </div>
+      <div class="col-65">
+        <input id="contact" name="contact" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10"></div>
+      <div class="col-15">
+        <label for="phone">Phone
+          <star>*</star>
+        </label>
+      </div>
+      <div class="col-65">
+        <input id="phone" name="phone" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10"> </div>
+      <div class="col-15">
+        <label for="objective">Objective</label>
+      </div>
+      <div class="col-65">
+        <textarea id="object" name="objective" style="height:80px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
 </div>
+<!--  footer -->
 <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
   <div>
     <h3> contact us </h3>
