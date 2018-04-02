@@ -105,6 +105,254 @@
         <textarea id="object" name="objective" style="height:80px"></textarea>
       </div>
     </div>
+    <h3>Application Information</h3>
+    <div class="row">
+      <div class="col-10"> </div>
+      <div class="col-15">
+        <label for="urk">URL</label>
+      </div>
+      <div class="col-65">
+        <input id="url" name="url" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10"> </div>
+      <div class="col-15">
+        <label for="env">Env. For Load Test</label>
+      </div>
+      <div class="col-25">
+        <select id="env" name="env" >
+          <option value="Test">Test</option>
+          <option value="Developing">Developing</option>
+          <option value="Staging">Staging</option>
+          <option value="Production">Production</option>
+        </select>
+      </div>
+      <div class="col-tab-5"></div>
+      <div class="col-10">
+        <label for="envDetail">Detail</label>
+      </div>
+      <div class="col-25">
+        <input id="envDetail" name="envDetail" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-tab-10"> </div>
+      <div class="col-15">
+        <label for="language">Language/Protocal</label>
+      </div>
+      <div class="col-25">
+        <select id="language" name="language" >
+          <option value="Java">Java</option>
+          <option value=".Net">.Net</option>
+          <option value="HTML">HTML</option>
+          <option value="WebService">Webservice</option>
+        </select>
+      </div>
+      <div class="col-tab-5"></div>
+      <div class="col-10">
+        <label for="langnageDetail">Detail</label>
+      </div>
+      <div class="col-25">
+        <input id="langnageDetail" name="langnageDetail" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-tab-10"></div>
+      <div class="col-15">
+        <label for="browser">Browser Support</label>
+      </div>
+      <div class="col-15">
+        <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>Internet Exproler</label>
+      </div>
+      <div class="col-15">
+        <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>FireFox</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-tab-10"></div>
+      <div class="col-15">
+        <label for="sucurity">Sucurity </label>
+      </div>
+      <div class="col-25">
+        <select id="sucurity" name="sucurity" >
+          <option value="SSL 2.x">SSL 2.x</option>
+          <option value="SSL 3.x">SSL 3.x</option>
+          <option value="TLS 1.0">TLS 1.0</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-tab-10"></div>
+    <div class="col-15">
+      <label>SystemImpact</label>
+    </div>
+    <div class="col-15">
+      <label>
+        <input type="checkbox">
+        <span class="checkmark"></span>F5</label>
+    </div>
+    <div class="col-15">
+      <label>
+        <input type="checkbox">
+        <span class="checkmark"></span>LDAP</label>
+    </div>
+    <div class="col-15">
+      <label>
+        <input type="checkbox">
+        <span class="checkmark"></span>Firewall</label>
+    </div>
+    <div class="col-15">
+      <label>
+        <input type="checkbox">
+        <span class="checkmark"></span>Proxy</label>
+    </div>
+    <div class="col-15">
+      <label>
+        <input type="checkbox">
+        <span class="checkmark"></span>AD</label>
+    </div>
+	  </div>
+    <div class="row">
+      <div class="col-tab-10"></div>
+      <div class="col-15"></div>
+      <div class="col-15">
+        <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>SFF</label>
+      </div>
+      <div class="col-15">
+        <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>Siebel</label>
+      </div>
+      <div class="col-15">
+        <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>SAP</label>
+      </div>
+      <div class="col-15">
+        <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>EAI</label>
+      </div>
+      <div class="col-15">
+        <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>IVR/USSD</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-tab-10"></div>
+      <div class="col-15"></div>
+		<div class="col-5">
+			<label>ETC</label></div>
+      <div class="col-25">
+        <input id="systemImpactETC" name="systemImpactETC" type="text">
+      </div>
+    </div>
+	  <h3>Load Test : User Conurrent</h3>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15">
+		  <label>Impact Assessment(User ที่ใช้งานระบบ)
+			  </label>
+		  </div>
+		  <div class="col-25">
+			  <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>External Impacts(Extenal User)</label>
+		  </div>
+		  <div class="col-25">
+			  <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>Organization Impacts(In House)</label>
+		  </div>
+	  </div>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15">
+		  <label for="userConcurrent">User Concurrent<star>*</star></label>
+		  </div>
+		  <div class="col-65">
+		  <input id="userConcurrent" name="userConcurrent" type="text">
+		  </div>
+	  </div>
+	  <h3>Load Test : SLA</h3>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15">
+		  <label for="respondTime">Respond Time</label>
+		  </div>
+		  <div class="col-65">
+		  <input id="respondTime" name="respondTime" type="text">
+		  </div>
+	  </div>
+	  <h3>Load Test : Scenario</h3>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15">
+		  <label>Test Scenarios</label></div>
+		  <div class="col-15">
+			  <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>Load Test</label>
+		  </div>
+		  <div class="col-15">
+			  <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>Stress Test</label>
+		  </div>
+		  <div class="col-15">
+			  <label>
+          <input type="checkbox">
+          <span class="checkmark"></span>Reeliabbility Test</label>
+		  </div>
+	  </div>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15"></div>
+		  <div class="col-25">
+		  <label for="testScenariosDetail">Detail</label></div>
+	  </div>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15"></div>
+		  <div class="col-65">
+			  <textarea id="testScenariosDetail" name="testScenariosDetail" style="height:80px"></textarea>
+		  </div>
+	  </div>
+	  <h3>Load Test : Date</h3>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  
+		<div class="col-15">
+		  <label>On Test/Staging Deploy</label></div>
+		  <div class="col-65">
+		  <input id="onTest" name="onTest" type="text">
+		  </div>
+			  
+	  </div>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15">
+		  <label>Traget Finish Date</label></div>
+		  <div class="col-65">
+		  <input id="finishDate" name="finishDate" type="text">
+		  </div>
+	  </div>
+	  <div class="row">
+	  <div class="col-tab-10"></div>
+		  <div class="col-15">
+		  <label for="remark">Remark</label></div>
+		  <div class="col-65">
+		  <textarea id="remark" name="remark" style="height:80px"></textarea>
+		  </div>
+	  </div>
     <div class="row">
       <input type="submit" value="Submit">
     </div>
