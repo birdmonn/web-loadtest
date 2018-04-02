@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<title>Form</title>
-<script src="./jquery-3.3.1.js"></script>
-<link rel="stylesheet" type="text/css" href="./Form-css.css">
-<link rel="stylesheet" type="text/css" href="./vertical-menu-css.css">
-	<link rel="stylesheet" type="text/css" href="./table-case-css.css">
-</head>
-<body style="font-family:Verdana;">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Form</title>
+    <script src="./jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Form-css.css">
+    <link rel="stylesheet" type="text/css" href="./vertical-menu-css.css">
+    <link rel="stylesheet" type="text/css" href="./table-case-css.css">
+    <script type="text/javascript" src="./js/bootstrap-datepicker.js"></script>
+    <script src="./jquery-2.1.3.min.js"></script>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="./js/bootstrap.js"></script>
+    <link href="./css/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="./js/bootstrap-datepicker-custom.js"></script>
+    <script src="./js/locales/bootstrap-datepicker.th.min.js" charset="UTF-8"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                todayBtn: true,
+                language: 'th',             //เปลี่ยน label ต่างของ ปฏิทิน ให้เป็น ภาษาไทย   (ต้องใช้ไฟล์ bootstrap-datepicker.th.min.js นี้ด้วย)
+                thaiyear: true              //Set เป็นปี พ.ศ.
+            }).datepicker("setDate", "0");  //กำหนดเป็นวันปัจุบัน
+        });
+    </script>
+    </head>
+    <body style="font-family:Verdana;">
 <div class="Banner" style="background-color:#f1f1f1;padding:15px;">
-  <h1>Banner web</h1>
-</div>
+      <h1>Banner web</h1>
+    </div>
 <div style="overflow:auto">
-  <div class="vertical-menu"> <a href="./form.html">Form</a> <a href="./all-case.html" class="active">All Case</a> <a href="#">Report</a> </div>
-	<div class="search-case">
-		
-		<form>
-		<h3> Search </h3>	
-			<div>
-				Project ID :
-				<input type="text">
-			</div> 
-				<div>
-				Project Name :
-				<input type="text">
-			</div> 
-				<div>
-					contact  :
-				<input type="text">
-			</div> 
-		</form>
-	</div>
-  <div class="main">
+      <div class="vertical-menu"> <a href="./form.html">Form</a> <a href="./all-case.html" class="active">All Case</a> <a href="#">Report</a> </div>
+      <div class="search-case">
+    <form>
+          <h3> Search </h3>
+          <div> Project ID :
+        <input type="text">
+      </div>
+          <div> Project Name :
+        <input type="text">
+      </div>
+          <div> contact  :
+        <input type="text">
+      </div>
+        </form>
+  </div>
+      <div class="main">
     <h2>All case</h2>
+		    <input id="inputdatepicker" class="datepicker" data-date-format="mm/dd/yyyy">
     <table id="table-case">
-      <tr>
+          <tr>
         <th>Company</th>
         <th>Contact</th>
         <th>Country</th>
       </tr>
-      <tr>
+          <tr>
         <td>Alfreds Futterkiste</td>
         <td>Maria Anders</td>
         <td>Germany</td>
       </tr>
-      <tr>
+          <tr>
         <td>Centro comercial Moctezuma</td>
         <td>Francisco Chang</td>
         <td>Mexico</td>
       </tr>
-      <tr>
+          <tr>
         <td>Ernst Handel</td>
         <td>Roland Mendel</td>
         <td>Austria</td>
       </tr>
-      <tr>
+          <tr>
         <td>Island Trading</td>
         <td>Helen Bennett</td>
         <td>UK</td>
       </tr>
-      <tr>
+          <tr>
         <td>Laughing Bacchus Winecellars</td>
         <td>Yoshi Tannamuri</td>
         <td>Canada</td>
       </tr>
-      <tr>
+          <tr>
         <td>Magazzini Alimentari Riuniti</td>
         <td>Giovanni Rovelli</td>
         <td>Italy</td>
       </tr>
-    </table>
+        </table>
   </div>
-</div>
+    </div>
 <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
-  <div>
+      <div>
     <h3> contact us </h3>
     <div> Email : nattapoo@ais.co.th </div>
     <div> phone : 02-2222222 </div>
   </div>
-</div>
-<script>
-w3IncludeHTML();
-</script>
+    </div>
 </body>
 </html>
